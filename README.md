@@ -5,11 +5,6 @@
 yarn install
 ```
 
-## Issues with setup try:
-```
-yarn install --ignore-engines
-```
-
 ### Compiles and hot-reloads for development
 ```
 yarn serve

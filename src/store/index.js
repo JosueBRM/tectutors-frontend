@@ -1,10 +1,20 @@
 import { createStore } from "vuex";
 
-import tutorsModules from './modules/tutors/index.js';
+import tutorsModule from './modules/tutors/index.js';
 
 const store = createStore({
     modules: {
-        tutors: tutorsModules
+        tutors: tutorsModule
+    },
+    state() {
+        return{
+            userId: 't3',
+        };
+    },
+    getters: {
+        userId(state) {
+            return state.userId;
+        }
     }
 });
 

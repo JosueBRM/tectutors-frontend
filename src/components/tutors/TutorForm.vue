@@ -1,28 +1,28 @@
-<template>
+x``<template>
     <form @submit.prevent="submitForm">
 
         <div class="form-control">
-            <label for="firstname">Nombre</label>
+            <label for="firstname">First Name</label>
             <input type="text" id="fistname" v-model.trim="firstName"/>
         </div>
 
         <div class="form-control">
-            <label for="lastname">Apellido</label>
+            <label for="lastname">Last Name</label>
             <input type="text" id="lastname" v-model.trim="lastName"/>
         </div>
 
         <div class="form-control">
-            <label for="description">Descripcion</label>
+            <label for="description">Description</label>
             <textarea id="description" rows="5" v-model.trim="description"></textarea>
         </div>
 
         <div class="form-control">
-            <label for="rate">Tarifa por Hora</label>
+            <label for="rate">Hourly Rate</label> 
             <input type="text" id="rate" v-model.number="rate"/>
         </div> 
 
         <div class="form-control">
-            <h3>Areas de experiencia</h3>
+            <h3>Expert areas</h3>
 
             <div>
                 <input type="checkbox" id="frontend" value="frontend" v-model="areas">
